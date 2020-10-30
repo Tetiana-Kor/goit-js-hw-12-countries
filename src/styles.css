@@ -13,8 +13,15 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  /*
-   * CSS image reference example.
-   */
-  background-image: url('./images/bg-pattern.png');
+  line-height: 1.5;
+  color: #272688;
+  text-align: center;
+
+  background-image: linear-gradient(to right, #d9a7c7, #fffcdc);
+}
+
+input {
+  margin: 0;
+  padding: 15px;
+  margin-bottom: 24px;
 }
