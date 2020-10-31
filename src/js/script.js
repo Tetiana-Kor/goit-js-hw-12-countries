@@ -1,4 +1,4 @@
-import API from './fetchCountries';
+import API from './fetchCountries.js';
 
 import { error } from '@pnotify/core';
 import '@pnotify/core/dist/BrightTheme.css';
@@ -41,16 +41,15 @@ function chooseCountry(countries) {
 
 function renderCountryMarkup(option, countries) {
   const markup = option(countries);
-  refs.counriesList.insertAdjacentHTML('beforeend', markup);
+  refs.countriesContainer.insertAdjacentHTML('beforeend', markup);
 }
 
 function clearMarkup() {
-  refs.counriesList.innerHTML = '';
+  refs.countriesContainer.innerHTML = '';
 }
 
 function onError(error) {
   clearMarkup();
-  console.log(error);
 }
 
 function tooManyMatchesError() {
