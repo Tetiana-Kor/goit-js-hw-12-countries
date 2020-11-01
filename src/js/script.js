@@ -29,10 +29,13 @@ function onSearch(e) {
 
 function chooseCountry(countries) {
   if (countries.length > 10) {
+    clearMarkup();
     tooManyMatchesError();
   } else if (countries.length > 1 && countries.length <= 10) {
+    clearMarkup();
     renderCountryMarkup(counriesList, countries);
   } else if (countries.length === 1) {
+    clearMarkup();
     renderCountryMarkup(countriesMarkup, countries);
   } else {
     noResults();
