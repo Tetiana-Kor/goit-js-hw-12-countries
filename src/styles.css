@@ -9,19 +9,59 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+  font-family: 'Grandstander', cursive;
 
   line-height: 1.5;
-  color: #272688;
-  text-align: center;
 
-  background-image: linear-gradient(to right, #d9a7c7, #fffcdc);
+  background-image: url('./images/world.png');
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
 }
 
 input {
-  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 15px;
   margin-bottom: 24px;
+}
+
+.country-card {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.country-card__title {
+  text-align: center;
+  font-size: 42px;
+}
+
+.country-card__list {
+  margin-right: 50px;
+}
+
+.country-card__language {
+  padding: 0;
+  margin: 0;
+}
+
+.country-card__language li {
+  margin-left: 30px;
+}
+
+.list-countries {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+p {
+  margin: 0;
 }
