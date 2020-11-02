@@ -5,7 +5,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 
 import countriesMarkup from '../templates/countries-markup.hbs';
-import counriesList from '../templates/countries-list.hbs';
+import countriesList from '../templates/countries-list.hbs';
 
 const debounce = require('lodash.debounce');
 
@@ -33,7 +33,7 @@ function chooseCountry(countries) {
     tooManyMatchesError();
   } else if (countries.length > 1 && countries.length <= 10) {
     clearMarkup();
-    renderCountryMarkup(counriesList, countries);
+    renderCountryMarkup(countriesList, countries);
   } else if (countries.length === 1) {
     clearMarkup();
     renderCountryMarkup(countriesMarkup, countries);
